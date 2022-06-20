@@ -187,11 +187,30 @@
                         </div>
                     </div>
                     <div class="col-lg-12 text-center">
-                        <h3 class="">Graph database, neural networks, mining, and its applications.</h3>
+                        <h3 class="">Graph database, neural networks, mining, and its applications</h3>
                     </div>
                     <div class="col-lg-12">
                         <p class="text-justify"><b>Abstract:</b>
-                            TBA 
+                            In this talk, I will present my recent works related to graphs.
+                            My works include indexing for path queries [ICDE2022], network
+                            reliability on uncertain graphs [EDBT2019], route recommendation on
+                            road networks with PoIs [EDBT2017], scalable graph neural networks
+                            [ECML/PKDD2022], and so on.
+                        </p>
+                    </div>
+                    <div class="col-lg-12 text-center">
+                        <h3 class="">On discovering discriminatory bias in graphs</h3>
+                    </div>
+                    <div class="col-lg-12">
+                        <p class="text-justify"><b>Abstract:</b>
+                            Fairness is an important keyword for recent machine learning studies.
+                            Current studies mainly focus on tabular data and/or natural languages.
+                            My research interest is fairness in graph data, for example, knowledge
+                            graphs and social networks. First, I will present a big picture of my
+                            research topic.
+                            Then, I introduce discriminatory biases in wikidata, which is the
+                            largest public knowledge graph, and then methods to find biases on
+                            graphs. Finally, I conclude my talks with some future works.
                         </p>
                     </div>
                     <div class="separator col-12 text-center mt-2 mb-4">
@@ -219,11 +238,19 @@
                         </div>
                     </div>
                     <div class="col-lg-12 text-center">
-                        <h3 class="">Affinity propagation.</h3>
+                        <h3 class="">Graph-based Clustering at Scale</h3>
                     </div>
                     <div class="col-lg-12">
                         <p class="text-justify"><b>Abstract:</b>
-                            TBA 
+                            Affinity Propagation (AP) is a fundamental algorithm to identify clusters included in data objects. Given similarities among objects, it iteratively performs message updates between all data object pairs until convergence. Although AP yields a higher clustering quality compared with other methods, it is computationally expensive. Hence, it has difficulty handling massive datasets that include numerous data objects. This is because the message updates require a quadratic cost of the number of data objects. In this talk, we discuss a novel algorithm published in AAAI 2021 for handling large datasets; we propose a fast affinity propagation algorithm, ScaleAP, which outputs the same clusters as AP but within a shorter computation time. ScaleAP dynamically excludes unnecessary message updates without sacrificing its clustering accuracy. Our extensive evaluations demonstrate that ScaleAP outperforms existing AP algorithms in terms of running time by up to two orders of magnitude. 
+                        </p>
+                    </div>
+                    <div class="col-lg-12 text-center">
+                        <h3 class="">Fast Similarity Search for Large Knowledge Graphs</h3>
+                    </div>
+                    <div class="col-lg-12">
+                        <p class="text-justify"><b>Abstract:</b>
+                            Entity search on knowledge graphs is now an essential data resource to develop practical AI models. However, it is expensive to find essential entities that are well relevant to user-specified queries. In this talk, we discuss a fast similarity search algorithm based on ObjectRank, a well-established technique for managing heterogeneous graphs. Given user-specified query nodes in a heterogeneous graph, ObjectRank extracts the most relevant nodes by evaluating node-importances against the query node. This talk presents a novel algorithm SchemaRank, which detects the exact top-k important nodes for a given query within a short running time. SchemaRank dynamically excludes unpromising nodes and edges, ensuring that it detects the same top-k important nodes as ObjectRank. Our extensive evaluations demonstrate that the running time of SchemaRank outperforms existing methods by up to two orders of magnitude.
                         </p>
                     </div>
                     <div class="separator col-12 text-center mt-2 mb-4">
@@ -246,11 +273,27 @@
                         </div>
                     </div>
                     <div class="col-lg-12 text-center">
-                        <h3 class="">Evolutionary Graph Theory - Social Balance on Networks.</h3>
+                        <h3 class="">Evolutionary Graph Theory: Analysis and Optimization</h3>
                     </div>
                     <div class="col-lg-12">
                         <p class="text-justify"><b>Abstract:</b>
-                            TBA 
+                            Diffusion theory studies the spread of novel traits (social memes, influence, atomic spins, genetic mutations, etc) in a population of individuals (robots, people, atoms, genotypes, etc), and has far reaching applications in diverse domains, such as physics, biology and sociology.</p>
+                        
+                        <p class="text-justify">
+                            In this talk we will introduce the Moran and Voter diffusion models, which are standard processes for modeling the stochastic spread of genetic mutations in a structured population, where the structure is represented as a graph (network). The success of trait spread is measured in terms of its fixation probability, i.e., the probability that the novel mutation takes over the population. We will sketch the diverse effects that population structure can have on the fixation probability and fixation time, and present amplifiers, which are graphs with the remarkable property of significantly increasing the fixation probability, thereby amplifying the effect of natural selection. We will conclude with some optimization problems, which are concerned with engineering the network so as to maximize fixation probability. 
+                        </p>
+                    </div>
+                    <div class="col-lg-12 text-center">
+                        <h3 class="">Social Balance on Networks: Local Minima and Best Edge Dynamics</h3>
+                    </div>
+                    <div class="col-lg-12">
+                        <p class="text-justify"><b>Abstract:</b>
+                            Structural balance theory is an established framework for studying social relationships of friendship and enmity.
+                            These relationships are modeled by a signed network whose energy potential measures the level of imbalance,
+                            while stochastic dynamics drives  the network towards a state of minimum energy that captures social balance.
+                            It is known that this energy landscape has local minima that can trap socially-aware dynamics, preventing it from reaching balance.
+                            In this talk we will highlight some robustness and attractor properties of these local minima.
+                            Motivated by these anomalies, we introduce Best Edge Dynamics (BED), a new plausible stochastic process that is guaranteed to always reach balance, and that it does so fast in various interesting settings.
                         </p>
                     </div>
                     <div class="separator col-12 text-center mt-2 mb-4">
@@ -278,9 +321,26 @@
                 </div>
                 <div class="col-lg-12">
                     <p class="text-justify"><b>Abstract:</b>
-                        TBA 
+                        A common paradigm in engineering consists of mathematical modeling followed by numerical optimization.
+                        Over the years, a chasm has formed between the two stages: On the one hand, models are being developed with ever growing complexity in order to account for intricate data irregularities. On the other hand, the numerical optimization is being casually delegated to an external "general purpose" solver, often lacking a broad view about the problem at hand.
+                    </p>
+                    <p class="text-justify">
+                        Attempting to reconcile between the two stages, we explore problems in which there exists some underlying geometric or topological structure. Such structure naturally exists in shape processing applications where it is explicitly encoded in the form of a discretized manifold. Popular examples include correspondence and reconstruction of non-rigid shapes.
+                        In other fields the geometry may be latent but can be inferred from data. For example, in recommender systems it is common to assume a relational structure between different users and different items that can be encoded ex-ante in the form of graphs.
+                    </p>
+                    <p class="text-justify">
+                        We propose a methodological approach that links between the computational structures arising within common numerical algorithms, and simple dynamical processes on the underlying geometric structures. This gives rise to emergent models, often very simple, exhibiting dramatic improvements in run times, robustness, accuracy, ease of implementation, and many other aspects. 
                     </p>
                 </div>
+                <div class="col-lg-12 text-center">
+                    <h3 class="">Spectral Subgraph Localization</h3>
+                </div>
+                <div class="col-lg-12">
+                    <p class="text-justify"><b>Abstract:</b>
+                        Several graph mining problems are based on some variant of the subgraph isomorphism problem: Given two graphs, G and Q, does G contain a subgraph isomorphic to Q? As this problem is NP hard, many methods avoid addressing it explicitly. In this talk, we will propose a method that attempts to solve the problem by localizing, i.e., finding the position of Q in G, through solving an inverse eigenvalue problem with structural constraints. We demonstrate that our spectral approach outperforms state-of-the-art localization and subgraph matching methods on both real and synthetic graphs. 
+                        Joint work with Judith Hermanns ,Davide Mottin, Panagiotis Karras and Alex Bronstein.
+                    </p>
+            </div>
             </div>
         </section> 
 
@@ -289,44 +349,126 @@
             <div class="container">
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Program</h2>
                 <div class="row">
-                    TBA
-                </div>
-                <div class="row">
                     <div class="col-lg-12 text-center">
-                        <p class="text-muted mb-4" id="time-warning">Monday June 27</b>.</p></div>
-
+                        <p class="text-muted mb-4" id="time-warning"></b></p></div>
+                    <div class="col-lg-12 text-center">
+                        <h3>Monday June 27</h3>
+                    </div> 
                     <table class="table table-striped">
                         <tbody>
                             <tr><td colspan="2" class="text-center"><b>SESSION 1 - TBA</b></td></tr>
                             <tr class="d-flex">
-                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-27 09:00:00">09:00</span> - <span class="workshopitem" data-needed="2022-06-27 09:10:00">09:10</span></td>
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-27 09:15:00">09:15</span> - <span class="workshopitem" data-needed="2022-06-27 09:30:00">09:30</span></td>
                                 <td class="program_item col-md-10"><b>Workshop Opening - Welcome</b></td>
                             </tr>
                             <tr class="d-flex">
-                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-27 09:10:00">09:10</span> - <span class="workshopitem" data-needed="2022-04-26 09:30:00">10:10</span></td>
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-27 09:30:00">09:30</span> - <span class="workshopitem" data-needed="2022-06-27 10:30:00">10:30</span></td>
                                 <td class="program_item col-md-10"><b>Keynote 1: TBA.</b> TBA </td>
                             </tr>
                             <tr class="d-flex">
-                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-27 10:15:00">10:15</span> - <span class="workshopitem" data-needed="2022-06-27 10:30:00">10:30</span></td>
-                                <td class="program_item col-md-10"><b>Coffee Break</b></td>
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-27 10:30:00">10:30</span> - <span class="workshopitem" data-needed="2022-06-27 11:00:00">11:00</span></td>
+                                <td class="program_item col-md-10"><b><i class="bi bi-cup"></i>&nbsp; Coffee Break</b></td>
                             </tr>
                             <tr class="d-flex">
-                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-27 10:30:00">10:30</span> - <span class="workshopitem" data-needed="2022-06-27 11:30:00">11:30</span></td>
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-27 10:30:00">11:00</span> - <span class="workshopitem" data-needed="2022-06-27 11:30:00">12:00</span></td>
                                 <td class="program_item col-md-10"><b>Keynote 1: TBA.</b> TBA </td>
+                            </tr>
+                            <tr class="d-flex">
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-27 12:00:00">12:00</span> - <span class="workshopitem" data-needed="2022-06-27 13:00:00">13:00</span></td>
+                                <td class="program_item col-md-10"><b><svg class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M864 0c-88.384 0-160 71.648-160 160l0 480 128 0 0 384 192 0L1024 160C1024 71.648 952.352 0 864 0zM416 0c-17.664 0-32 14.336-32 32l0 224c0 8.832-14.336 16-32 16-17.664 0-32-7.168-32-16L320 32c0-17.664-14.336-32-32-32-17.664 0-32 14.336-32 32l0 224c0 8.832-14.336 16-32 16-17.664 0-32-7.168-32-16L192 32c0-17.664-14.336-32-32-32-17.664 0-32 14.336-32 32l0 224c0 8.832-14.336 16-32 16s-32-7.168-32-16L64 32c0-17.664-14.336-32-32-32S0 14.336 0 32l0 224 0 64c0 28.32 25.056 44.096 52.992 64C88.224 409.056 128 440.64 128 512l0 512 192 0L320 512c0-71.36 39.776-102.944 75.008-128C422.944 364.096 448 348.32 448 320l0-64L448 32C448 14.336 433.664 0 416 0z"  /></svg>&nbsp; Lunch break</b></td>
                             </tr>
                             <tr><td colspan="2" class="text-center"><b>SESSION 2 - TBA</b></td></tr>
                             <tr class="d-flex">
-                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-04-26 10:45:00">10:45</span> - <span class="workshopitem" data-needed="2022-04-26 11:00:00">11:00</span></td>
-                                <td class="program_item col-md-10"><b>Keynote 2: TBA.</b> TBA</td>
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-27 13:00:00">13:00</span> - <span class="workshopitem" data-needed="2022-06-27 14:00:00">14:00</span></td>
+                                <td class="program_item col-md-10"><b>Keynote 1: TBA.</b> TBA </td>
                             </tr>
                             <tr class="d-flex">
-                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-04-26 16:45:00">16:45</span> - <span class="workshopitem" data-needed="2022-04-26 16:55:00">16:55</span></td>
-                                <td class="program_item col-md-10"><b>Closing</b></td>
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-27 14:00:00">14:00</span> - <span class="workshopitem" data-needed="2022-06-27 14:30:00">14:30</span></td>
+                                <td class="program_item col-md-10"><b><i class="bi bi-cup"></i>&nbsp; Coffee Break</b></td>
+                            </tr>
+                            <tr class="d-flex">
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-27 14:30:00">14:30</span> - <span class="workshopitem" data-needed="2022-06-27 15:30:00">15:30</span></td>
+                                <td class="program_item col-md-10"><b>Keynote 1: TBA.</b> TBA </td>
+                            </tr>
+                            <tr class="d-flex">
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-27 15:30:00">15:30</span> - <span class="workshopitem" data-needed="2022-06-27 16:30:00">16:30</span></td>
+                                <td class="program_item col-md-10"><b>Round table and brainstorming.</b> TBA </td>
                             </tr>
                         </tbody>
                     </table>
-
-                
+                    <div class="col-lg-12 text-center">
+                        <h3>Tueday June 28</h3>
+                    </div> 
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr><td colspan="2" class="text-center"><b>SESSION 3 - TBA</b></td></tr>
+                            <tr class="d-flex">
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-28 09:15:00">09:15</span> - <span class="workshopitem" data-needed="2022-06-28 09:30:00">09:30</span></td>
+                                <td class="program_item col-md-10"><b>Workshop Opening - Welcome</b></td>
+                            </tr>
+                            <tr class="d-flex">
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-28 09:30:00">09:30</span> - <span class="workshopitem" data-needed="2022-06-28 10:30:00">10:30</span></td>
+                                <td class="program_item col-md-10"><b>Keynote 1: TBA.</b> TBA </td>
+                            </tr>
+                            <tr class="d-flex">
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-28 10:30:00">10:30</span> - <span class="workshopitem" data-needed="2022-06-28 11:00:00">11:00</span></td>
+                                <td class="program_item col-md-10"><b><i class="bi bi-cup"></i>&nbsp; Coffee Break</b></td>
+                            </tr>
+                            <tr class="d-flex">
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-28 10:30:00">11:00</span> - <span class="workshopitem" data-needed="2022-06-28 11:30:00">12:00</span></td>
+                                <td class="program_item col-md-10"><b>Keynote 1: TBA.</b> TBA </td>
+                            </tr>
+                            <tr class="d-flex">
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-28 12:00:00">12:00</span> - <span class="workshopitem" data-needed="2022-06-28 13:00:00">13:00</span></td>
+                                <td class="program_item col-md-10"><b><svg class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M864 0c-88.384 0-160 71.648-160 160l0 480 128 0 0 384 192 0L1024 160C1024 71.648 952.352 0 864 0zM416 0c-17.664 0-32 14.336-32 32l0 224c0 8.832-14.336 16-32 16-17.664 0-32-7.168-32-16L320 32c0-17.664-14.336-32-32-32-17.664 0-32 14.336-32 32l0 224c0 8.832-14.336 16-32 16-17.664 0-32-7.168-32-16L192 32c0-17.664-14.336-32-32-32-17.664 0-32 14.336-32 32l0 224c0 8.832-14.336 16-32 16s-32-7.168-32-16L64 32c0-17.664-14.336-32-32-32S0 14.336 0 32l0 224 0 64c0 28.32 25.056 44.096 52.992 64C88.224 409.056 128 440.64 128 512l0 512 192 0L320 512c0-71.36 39.776-102.944 75.008-128C422.944 364.096 448 348.32 448 320l0-64L448 32C448 14.336 433.664 0 416 0z"  /></svg>&nbsp; Lunch break</b></td>
+                            </tr>
+                            <tr><td colspan="2" class="text-center"><b>SESSION 4 - TBA</b></td></tr>
+                            <tr class="d-flex">
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-28 13:00:00">13:00</span> - <span class="workshopitem" data-needed="2022-06-28 14:00:00">14:00</span></td>
+                                <td class="program_item col-md-10"><b>Keynote 1: TBA.</b> TBA </td>
+                            </tr>
+                            <tr class="d-flex">
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-28 14:00:00">14:00</span> - <span class="workshopitem" data-needed="2022-06-28 14:30:00">14:30</span></td>
+                                <td class="program_item col-md-10"><b><i class="bi bi-cup"></i>&nbsp; Coffee Break</b></td>
+                            </tr>
+                            <tr class="d-flex">
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-28 14:30:00">14:30</span> - <span class="workshopitem" data-needed="2022-06-28 15:30:00">15:30</span></td>
+                                <td class="program_item col-md-10"><b>Keynote 1: TBA.</b> TBA </td>
+                            </tr>
+                            <tr class="d-flex">
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-28 15:30:00">15:30</span> - <span class="workshopitem" data-needed="2022-06-28 16:30:00">16:30</span></td>
+                                <td class="program_item col-md-10"><b>Round table and brainstorming.</b> TBA </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="col-lg-12 text-center">
+                        <h3>Wednesday June 29</h3>
+                    </div> 
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr><td colspan="2" class="text-center"><b>SESSION 5 - TBA</b></td></tr>
+                            <tr class="d-flex">
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-29 09:15:00">09:15</span> - <span class="workshopitem" data-needed="2022-06-29 09:30:00">09:30</span></td>
+                                <td class="program_item col-md-10"><b>Workshop Opening - Welcome</b></td>
+                            </tr>
+                            <tr class="d-flex">
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-29 09:30:00">09:30</span> - <span class="workshopitem" data-needed="2022-06-29 10:30:00">10:30</span></td>
+                                <td class="program_item col-md-10"><b>Keynote 1: TBA.</b> TBA </td>
+                            </tr>
+                            <tr class="d-flex">
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-29 10:30:00">10:30</span> - <span class="workshopitem" data-needed="2022-06-29 11:00:00">11:00</span></td>
+                                <td class="program_item col-md-10"><b><i class="bi bi-cup"></i>&nbsp; Coffee Break</b></td>
+                            </tr>
+                            <tr class="d-flex">
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-29 10:30:00">11:00</span> - <span class="workshopitem" data-needed="2022-06-29 11:30:00">12:00</span></td>
+                                <td class="program_item col-md-10"><b>Keynote 1: TBA.</b> TBA </td>
+                            </tr>
+                            <tr class="d-flex">
+                                <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-29 12:00:00">12:00</span> - <span class="workshopitem" data-needed="2022-06-29 13:00:00">13:00</span></td>
+                                <td class="program_item col-md-10"><b><svg class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M864 0c-88.384 0-160 71.648-160 160l0 480 128 0 0 384 192 0L1024 160C1024 71.648 952.352 0 864 0zM416 0c-17.664 0-32 14.336-32 32l0 224c0 8.832-14.336 16-32 16-17.664 0-32-7.168-32-16L320 32c0-17.664-14.336-32-32-32-17.664 0-32 14.336-32 32l0 224c0 8.832-14.336 16-32 16-17.664 0-32-7.168-32-16L192 32c0-17.664-14.336-32-32-32-17.664 0-32 14.336-32 32l0 224c0 8.832-14.336 16-32 16s-32-7.168-32-16L64 32c0-17.664-14.336-32-32-32S0 14.336 0 32l0 224 0 64c0 28.32 25.056 44.096 52.992 64C88.224 409.056 128 440.64 128 512l0 512 192 0L320 512c0-71.36 39.776-102.944 75.008-128C422.944 364.096 448 348.32 448 320l0-64L448 32C448 14.336 433.664 0 416 0z"  /></svg>&nbsp; Lunch break</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section> 
