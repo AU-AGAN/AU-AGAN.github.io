@@ -189,15 +189,29 @@
                         </div>
                     </div>
                     <div class="col-lg-12 text-center">
-                        <h3 class="">Graph database, neural networks, mining, and its applications</h3>
+                        <h3 class="">Path search on graphs</h3>
                     </div>
                     <div class="col-lg-12">
                         <p class="text-justify"><b>Abstract:</b>
-                            In this talk, I will present my recent works related to graphs.
-                            My works include indexing for path queries [ICDE2022], network
-                            reliability on uncertain graphs [EDBT2019], route recommendation on
-                            road networks with PoIs [EDBT2017], scalable graph neural networks
-                            [ECML/PKDD2022], and so on.
+                            Path searches are one of the fundamental searches in graphs, which
+                            find matched paths from source and target vertices. Several works
+                            address to discover effective path searches and their efficient
+                            algorithms.
+                            In this talk, I will present my studies related to path searches:
+                            indexing for conjunctive path queries, sequenced route query, and
+                            network reliability. The conjunctive path queries find the paths that
+                            are matched with path patterns that include path navigation, cycles,
+                            and conjunction.
+                            The sequence route query finds the shortest route through
+                            user-specified categories of vertices, for example, paths through
+                            restaurant, bar, and theater. The network reliability aims to compute
+                            the probability that the given paths are connected by paths on
+                            uncertain graphs.
+                            In this talk, I will present my works to efficiently solve their path
+                            searches and their extension. In more concretely, I talk about
+                            indexing for conjunctive path queries, efficient algorithms for
+                            extended sequenced route query, called SkySR queries, and sampling
+                            methods to efficiently and accurately compute network reliability.
                         </p>
                     </div>
                     <div class="col-lg-12 text-center">
@@ -205,14 +219,15 @@
                     </div>
                     <div class="col-lg-12">
                         <p class="text-justify"><b>Abstract:</b>
-                            Fairness is an important keyword for recent machine learning studies.
-                            Current studies mainly focus on tabular data and/or natural languages.
-                            My research interest is fairness in graph data, for example, knowledge
-                            graphs and social networks. First, I will present a big picture of my
-                            research topic.
-                            Then, I introduce discriminatory biases in wikidata, which is the
-                            largest public knowledge graph, and then methods to find biases on
-                            graphs. Finally, I conclude my talks with some future works.
+                            Fairness is an important keyword for recent machine learning
+                            studies. Current studies mainly focus on tabular data and/or natural
+                            languages. My research interest is fairness in graph data, for
+                            example, knowledge graphs and social networks. There are yet a few
+                            works to address fairness on graphs. I will introduce the concept of
+                            fairness in machine learning, and then present why graph fairness is
+                            important for us.  I also explain discriminatory biases in wikidata,
+                            which is the largest public knowledge graph, and then methods to find
+                            biases on graphs.
                         </p>
                     </div>
                     <div class="separator col-12 text-center mt-2 mb-4">
@@ -386,7 +401,7 @@
                             <tr><td colspan="2" class="text-center"><b>SESSION 2 - Graph mining</b></td></tr>
                             <tr class="d-flex">
                                 <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-27 13:00:00">13:00</span> - <span class="workshopitem" data-needed="2022-06-27 13:45:00">13:45</span></td>
-                                <td class="program_item col-md-10"><b>Keynote 3: Yuya Sasaki</b></br>  <a href="#yuya">Graph database, neural networks, mining, and its applications</a></td>
+                                <td class="program_item col-md-10"><b>Keynote 3: Yuya Sasaki</b></br>  <a href="#yuya">Path search on graphs</a></td>
                             </tr>
                             <tr class="d-flex">
                                 <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-27 13:45:00">13:45</span> - <span class="workshopitem" data-needed="2022-06-27 14:00:00">14:00</span></td>
@@ -438,7 +453,7 @@
                             </tr>
                             <tr class="d-flex">
                                 <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-28 11:15:00">11:15</span> - <span class="workshopitem" data-needed="2022-06-28 12:00:00">12:00</span></td>
-                                <td class="program_item col-md-10"><b>Fatemeh Zardbani </td>
+                                <td class="program_item col-md-10"><b>Fatemeh Zardbani</b> - Data management & analysis techniques for scientific data exploration<br/><b>Petros Petsinis</b> - Identifying High-Coverage Communities in Edge-Weighted Networks</td>
                             </tr>
                             <tr class="d-flex">
                                 <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-28 12:00:00">12:00</span> - <span class="workshopitem" data-needed="2022-06-28 13:00:00">13:00</span></td>
@@ -471,7 +486,7 @@
                             </tr>
                             <tr class="d-flex">
                                 <td class="timings col-md-2" scope="col"><span class="workshopitem" data-needed="2022-06-28 19:00:00">19:00</span> - <span class="workshopitem" data-needed="2022-06-28 22:00:00">22:00</span></td>
-                                <td class="program_item col-md-10"><svg class="svg-icon" style="width: 1.5em; height: 1.5em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M622.083274 706.831838H91.571619c-15.411703 0-27.922141 12.514953-27.922142 27.919884v111.688566c0 15.40493 12.510438 27.922141 27.922142 27.922141h530.513913c15.434281 0 27.922141-12.517211 27.922141-27.922141V734.75398c0-15.407188-12.490118-27.922141-27.924399-27.922142z m-27.919884 111.686308H119.49376v-55.842025h474.66963v55.842025zM566.241249 678.909697c15.434281 0 27.922141-12.514953 27.922141-27.922141 0-15.40493-12.48786-27.919884-27.922141-27.919884H147.415902c-15.413961 0-27.919884 12.514953-27.919884 27.919884 0 15.407188 12.50818 27.922141 27.919884 27.922141h418.825347zM356.826317 371.770657c-289.824016 0-293.179098 193.488451-293.179097 195.450475 0 15.407188 12.510438 27.922141 27.922141 27.922141h530.513913c15.434281 0 27.922141-12.514953 27.922141-27.922141 0.002258-1.962023-3.352824-195.450474-293.179098-195.450475zM125.28726 539.301248c14.185721-40.929294 63.062451-111.686308 231.541315-111.686308 168.485637 0 217.375914 70.757014 231.554862 111.686308H125.28726zM949.510852 324.652749a27.928915 27.928915 0 0 0-20.286281-8.726374h-143.859875l-24.052283-144.189514c-2.506152-15.215275-16.96055-25.440826-32.121638-22.959509-15.213018 2.535503-25.495013 16.91991-22.95951 32.121638l22.496662 135.027385h-22.878229a28.007938 28.007938 0 0 0-20.286281 8.726374 27.956008 27.956008 0 0 0-7.577158 20.751387l27.919884 502.591772c0.817322 14.795326 13.06134 26.368779 27.867954 26.368779h167.530591a27.928915 27.928915 0 0 0 27.89279-26.368779l27.922141-502.591772a27.989875 27.989875 0 0 0-7.608767-20.751387zM874.893011 818.518146h-114.700463l-24.810901-446.747489h164.335811L874.893011 818.518146z" fill="#040000" /></svg>&nbsp;<b>Gala dinner</b>.</td>
+                                <td class="program_item col-md-10"><svg class="svg-icon" style="width: 1.5em; height: 1.5em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M622.083274 706.831838H91.571619c-15.411703 0-27.922141 12.514953-27.922142 27.919884v111.688566c0 15.40493 12.510438 27.922141 27.922142 27.922141h530.513913c15.434281 0 27.922141-12.517211 27.922141-27.922141V734.75398c0-15.407188-12.490118-27.922141-27.924399-27.922142z m-27.919884 111.686308H119.49376v-55.842025h474.66963v55.842025zM566.241249 678.909697c15.434281 0 27.922141-12.514953 27.922141-27.922141 0-15.40493-12.48786-27.919884-27.922141-27.919884H147.415902c-15.413961 0-27.919884 12.514953-27.919884 27.919884 0 15.407188 12.50818 27.922141 27.919884 27.922141h418.825347zM356.826317 371.770657c-289.824016 0-293.179098 193.488451-293.179097 195.450475 0 15.407188 12.510438 27.922141 27.922141 27.922141h530.513913c15.434281 0 27.922141-12.514953 27.922141-27.922141 0.002258-1.962023-3.352824-195.450474-293.179098-195.450475zM125.28726 539.301248c14.185721-40.929294 63.062451-111.686308 231.541315-111.686308 168.485637 0 217.375914 70.757014 231.554862 111.686308H125.28726zM949.510852 324.652749a27.928915 27.928915 0 0 0-20.286281-8.726374h-143.859875l-24.052283-144.189514c-2.506152-15.215275-16.96055-25.440826-32.121638-22.959509-15.213018 2.535503-25.495013 16.91991-22.95951 32.121638l22.496662 135.027385h-22.878229a28.007938 28.007938 0 0 0-20.286281 8.726374 27.956008 27.956008 0 0 0-7.577158 20.751387l27.919884 502.591772c0.817322 14.795326 13.06134 26.368779 27.867954 26.368779h167.530591a27.928915 27.928915 0 0 0 27.89279-26.368779l27.922141-502.591772a27.989875 27.989875 0 0 0-7.608767-20.751387zM874.893011 818.518146h-114.700463l-24.810901-446.747489h164.335811L874.893011 818.518146z" fill="#040000" /></svg>&nbsp;<b>Gala dinner</b></td>
                             </tr>
                         </tbody>
                     </table>
@@ -512,16 +527,17 @@
         </section> 
 
         <section class="page-section bg-light mb-0" id="participants">
-
+            <h2 class="page-section-heading text-center text-uppercase mb-5">Internal talks</h2>
             <div class="container">
-                <h2 class="page-section-heading text-center text-uppercase mb-5">Internal talks</h2>
                 <ul>
-                    <li><b>Judith Hermanns</b> - Aarhus University</li>
-                    <li><b>Dinos Lampropoulos</b> - University of Ioannina</li>
-                    <li><b>Kasper Overgaard Mortensen</b> - Aarhus University</li>
+                    <!-- <li><b>Loke Durocher</b> - Aarhus University</li> -->
+                    <li><b>Judith Hermanns</b> - Spectral Graph Alignment</li>
+                    <!-- <li><b>Dinos Lampropoulos</b> - University of Ioannina</li> -->
+                    <li><b>Kasper Overgaard Mortensen</b> - Efficient Adversarial Multi-Armed Bandits</li>
                     <li><b>Petros Petsinis</b> - Aarhus University</li>
                     <li><b>Fatemeh Zardbani</b> - Aarhus University</li>
-                </ul>
+<!--                     <li><b>Zhiqiang Zhong</b> - Aarhur University</li>
+ -->                </ul>
             </div>
         </section>
 
