@@ -310,3 +310,29 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     background-color: rgba(8, 8, 8, 1);
     display: inline-block;
 }
+
+.map-responsive{
+
+    overflow:hidden;
+
+    padding-bottom:56.25%;
+
+    position:relative;
+
+    height:0;
+
+}
+
+.map-responsive iframe{
+
+    left:0;
+
+    top:0;
+
+    height:100%;
+
+    width:100%;
+
+    position:absolute;
+
+}
