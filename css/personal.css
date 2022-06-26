@@ -312,27 +312,21 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .map-responsive{
-
     overflow:hidden;
-
     padding-bottom:56.25%;
-
     position:relative;
-
     height:0;
-
 }
 
 .map-responsive iframe{
-
     left:0;
-
     top:0;
-
     height:100%;
-
     width:100%;
-
     position:absolute;
 
+}
+
+@media screen and (max-width: 544px) {  
+  .small-mobile {font-size:1.9rem;} 
 }
